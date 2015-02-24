@@ -829,7 +829,7 @@ bool IrStream::readFrame(IMultiSourceFrame* p_multi_frame)
 		ofLogWarning("ofxKinect2::IrStream") << "Stream is not open.";
 		return readed;
 	}
-	Stream::readFrame();
+	Stream::readFrame(p_multi_frame);
 
 	IInfraredFrame* p_frame = NULL;
 
